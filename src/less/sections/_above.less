@@ -1,0 +1,113 @@
+.above {
+    background: @mainBg;
+    display:flex;
+    justify-content: center;
+
+    .above_conteiner {
+        font-family: 'Abhaya Libre', serif;
+        width: 80%;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin:200px 0px 200px 0px;
+
+        .above_conteiner-head {
+            align-self: center;
+            width: 60%;
+            margin:100px 0px 200px 0px;
+            
+            h2 {
+                font-size:25px;
+                color:@aboveTittle-head;
+                font-weight: bold;
+            }
+
+            p {
+                width: 60%;
+                color:@aboveText-head;
+                font-size: 19px;
+                margin:0 auto;
+            }
+        }
+
+        .above_conteiner_cards {
+            align-self: center;
+
+            .card {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                border:none;
+                margin-top:50px;
+                background: @mainBg;
+
+                img {
+                    width: 627px;
+                    height: 380px;
+                }
+
+                .card-body {
+                    width: 300px;
+                    color:@above-card;
+                    display:flex;
+                    flex-direction: column;
+                    align-content: center;
+                    text-align: center;
+
+                    h2 {
+                        font-size: 21px;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        font-size: 17px;
+                    }
+
+                    p {
+                        margin-top:40px;
+                        font-size: 17px;
+                        line-height: 1.2;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media @max992 {
+
+    .above {
+        
+        .above_conteiner {
+           
+    
+            .above_conteiner-head {
+                margin:10px 0px 20px 0px;
+
+                p {
+                    width: 100%;
+                    color:@aboveText-head;
+                    font-size: 19px;
+                    margin:0 auto;
+                }
+                
+            }
+    
+            .above_conteiner_cards {
+               
+                .card {
+                    flex-direction: column;
+                 
+    
+                    img {
+                        width: 80%;
+                        height:80%;
+                    }
+                }
+            }
+        }
+    }
+}
