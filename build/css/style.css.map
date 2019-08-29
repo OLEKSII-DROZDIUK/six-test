@@ -1,0 +1,1 @@
+{"version":3,"sources":["sections/_header.less"],"names":[],"mappings":"AAAA,OACI,OAAA,IAAA,MAAA,IACA,QAAA,KAFJ,UAKQ,MAAA","file":"style.css","sourcesContent":["header {\r\n    border:1px solid red;\r\n    padding:20px;\r\n\r\n    h1 {\r\n        color:@blue;\r\n    }\r\n}"]}
