@@ -1,0 +1,52 @@
+.nature {
+    background: @natureBg;
+    height: 380px;
+
+
+    .nature_conteiner {
+        width: 60%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nature_conteiner-line{
+            border-left: 2px solid #ffffff;
+            height: 300px;
+        }
+
+        .nature_conteiner-respect,
+        .nature_conteiner-like {
+            font-family: 'Abhaya Libre', serif;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size:20px;
+                font-weight: bold;
+                color:@natureTittle;
+                text-decoration: underline;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size:17px;
+                color:@natureText;
+                width: 60%;
+                align-self: center;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+
+
+@media @max1200 {
+    .nature {
+
+        .nature_conteiner {
+            width: 100%!important;
+        }
+
+    }
+}
+  
