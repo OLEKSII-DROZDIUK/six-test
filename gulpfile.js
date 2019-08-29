@@ -56,7 +56,7 @@ function scripts() {
 
 //Удалить всё в указанной папке
 function clean() {
-   return del(['build/*'])
+   return del(['build/css/*'],['build/js/*'])
 }
 
 //Просматривать файлы

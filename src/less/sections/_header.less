@@ -1,8 +1,51 @@
 header {
-    border:1px solid red;
-    padding:20px;
+    background: url("../img/header_img.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 775px;
 
-    h1 {
-        color:@blue;
+    .navbar-brand_mini {
+        display:none;
+    }
+
+    .header-navbar_list {
+        display:flex;
+        justify-content: center;
+        margin-top: 10px;
+
+        .header-navbar_list_items {
+            width: 70%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-link {
+                font-size:17px;
+                font-weight: 600;
+            }
+
+            .brand-logo,
+            .brand-logo_max992 {
+                width:"68";
+                height:"74";
+            }
+        }
+    }
+}
+
+@media @max992 {
+
+    header {
+        height: 100vh;
+        
+        .header-navbar_list_items {
+            li:nth-child(3){
+                display:none;
+            }
+        }
+    
+        .navbar-brand_mini {
+            display:block !important;
+        }
     }
 }
